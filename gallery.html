@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    a{
+        color: black !important;
+         }
+         @media (max-width:768px){
+        hr{
+         display: none;
+        }
+    }
+    @media (max-width:768px){
+        .left-content-gallery h1{
+         text-align: center;
+        }
+    }
+    @media (max-width:768px){
+        .gallery img{
+         margin-top: 10px;
+        }
+    }
+    
+    
+    @media(min-width:991px){
+        .navbar-nav{
+            background: none !important;
+        }
+        a{
+            color: white !important;
+        }
+    }
+        .main {
+            background-image: url(images/gallery/bg-gallery-1.jpg);
+            height: 100vh;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 57% 95%, 0 86%, 0% 50%);
+
+        }
+
+        .blur {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            backdrop-filter: blur(6px);
+        }
+
+        .gallery img {
+            border-radius: 5%;
+        }
+
+        .left-content-gallery {
+            position: relative;
+            /* margin-top: 100px; */
+            color: white;
+            padding-top: 150px;
+            z-index: 100;
+            width: 60%;
+            margin-left: 23%;
+        }
+
+        .left-content-gallery h1 {
+            font-size: 60px;
+            z-index: -1;
+        }
+
+        .foot {
+            background-color: rgb(19, 53, 18);
+        }
+
+        .foot-work {
+            color: white;
+        }
+
+        .foot-work h5 {
+            color: #e74c3c;
+        }
+
+        .foot-work ul li {
+            text-decoration: none;
+            padding-top: 20px;
+            margin-right: 50px;
+        }
+
+
+        ul li:hover {
+            color: #e74c3c;
+        }
+
+
+        .footer {
+            background-color: rgb(19, 53, 18);
+            height: 21vh;
+            border-top: 1px solid white;
+        }
+
+
+        .footer-logo {
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .footer-logo img {
+            height: 100%;
+            width: 150px;
+            padding-bottom: 15px;
+            /* align-items: center; */
+        }
+
+        .copy-right {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+
+        .more {
+            background-color: #e74c3c;
+            color: white;
+            width: 175px;
+            height: 50px;
+            border: none;
+        }
+
+        .hover div {
+            /* outline: 2px solid black; */
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .hover div::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(245, 222, 179, 0.568);
+            top: -100%;
+            left: 0;
+            transition: 0.2s ease;
+        }
+
+        .hover:hover div::after {
+            top: 0;
+        }
+
+        .hover img {
+            height: 100%;
+            object-fit: cover;
+        }
+        @media(min-width:0px){
+        .foot-work ul li{
+            color: white !important;
+        }
+    }
+       
+    </style>
+</head>
+
+<body>
+    <section class="header" id="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="images/menu.png" alt="" width="30px" height="30x">
+                    </span>
+                  </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto " style="background-color:white;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news&articles.html">NEWS & ARTICLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <a href="get-ticket.html"><button class="btn">Get Ticket</button></a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </section>
+    <section class="main" id="main">
+        <div class="container">
+        </div>
+        <div class="blur"></div>
+        <div class="container left-content-gallery">
+            <div class="left-content-gallery">
+                <h1>OUR GALLERY</h1>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <section class="tiger mt-5 text-center" id="tiger">
+        <h1>TIGERS</h1>
+        <hr style="color: red;">
+        <div class="container mt-5 gallery">
+            <div class="row">
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/tiger.jpg" alt="" width="100%">
+                    </div>
+                </div>
+
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/tiger2.jpeg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/tiger3.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/tiger4.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/tiger5.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/tiger6.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reptile mt-5 text-center" id="reptile">
+        <h1>REPTILE</h1>
+        <hr style="color:red ;">
+        <div class="container mt-5 gallery">
+            <div class="row">
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/reptile1.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/reptile2.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/reptile3.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/reptile4.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/reptile5.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/reptile6.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="birds mt-5 text-center" id="birds">
+        <h1>BIRDS</h1>
+        <hr style="color: red;">
+        <hr style="color:red;">
+        <div class="container mt-5 gallery">
+            <div class="row">
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/bird1.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/bird2.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/bird3.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/bird4.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/bird5.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/bird6.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="monkey mt-5 text-center" id="monkey">
+        <h1>MONKEYS</h1>
+        <hr style="color:red;">
+        <hr style="color:red;">
+        <div class="container mt-5 gallery">
+            <div class="row">
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/monkey.jpeg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/monkey2.jpeg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 hover">
+                    <div>
+                        <img src="images/gallery/monkey6.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/monkey4.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/monkey5.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 hover">
+                    <div>
+                        <img src="images/gallery/monkey3.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="end" id="end">
+        <div class="container-fluid foot mt-5">
+            <div class="container=fluid">
+                <div class="row">
+                    <div class="col-md-3 mt-5 foot-work">
+                        <h5 style="margin-left:30px ;">Quick Links</h5>
+                        <ul>
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="#">
+                                <li>About Us</li>
+                            </a>
+                            <a href="gallery.html">
+                                <li>Gallery</li>
+                            </a>
+                            <a href="contact.html">
+                                <li>Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mt-5 foot-work">
+                        <h5 style="margin-left:30px ;">Articles</h5>
+                        <ul>
+                            <a href="news1.html">
+                                <li>Release your Stress</li>
+                            </a>
+                            <a href="news2.html">
+                                <li>World for animals</li>
+                            </a>
+                            <a href="news3.html">
+                                <li>Student Promo</li>
+                            </a>
+                            <a href="news4.html">
+                                <li>Payday Promo</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mt-5 foot-work">
+                        <h5 style="margin-left:30px ;">Contact Info</h5>
+                        <ul>
+                            <li><i class="bi bi-geo-alt-fill" style="color: #e74c3c;"></i> V2GF+F8R, Garden West Millat
+                                Nagar, Karachi, Karachi City, Sindh </li>
+                            <li><i class="bi bi-telephone-fill" style="color: #e74c3c;"></i> +92 317 2587816</li>
+                            <li><i class="bi bi-envelope-fill" style="color: #e74c3c;"></i> abc@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mt-5 foot-work">
+                        <h5>Make Reservation</h5><br>
+                        <p>Quick, Simple, Easy to Use. No reservation costs. Great rates</p>
+                        <button class="more"><i class="bi bi-telephone-fill"></i> +92 317 2587816</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 footer-logo">
+                    <img src="images/logo.png" alt="">
+                    <p style="color: white;">Zoo & Recreation Template Made By R,H,T</p>
+                </div>
+                <div class="col-md-6 copy-right">
+                    <p style="color: white;">
+                        Copyright © 2021. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+</script>
+
+</html>
